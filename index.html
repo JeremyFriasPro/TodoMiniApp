@@ -26,8 +26,17 @@
                 <button id="createBtn" class="tool">Create Todo</button>
             </form>
         </div>
-        <div class="container view"></div>
-        <div class="container info"></div>
+        <div class="container view">
+            <div class="view-controls">
+                <a href="#" id="clear-completed">Clear Completed</a>
+                <a href="#" id="clear-all">Clear All</a>
+            </div>
+        </div>
+        <div class="container info">
+            <h1 id="left">Completed Today</h1>
+            <div id="line"></div>
+            <h1 id="right">You have completed <span id="num-completed"></span> todos so far.</h1>
+        </div>
     </div>
     <script defer src="main.js"></script>
 </body>

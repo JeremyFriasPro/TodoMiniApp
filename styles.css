@@ -47,7 +47,7 @@ body {
 
 @media (width >= 1200px) {
     .main-container {
-        padding: 3em 12em;
+        padding: 3em 9em;
     }
 }
 
@@ -92,7 +92,8 @@ body {
 }
 
 .tool {
-    font-size: 2.5em;
+    height: 50px;
+    font-size: 2em;
     font-weight: 900;
     border: none;
     border-radius: var(--radius);
@@ -101,10 +102,12 @@ body {
 #todo {
     width: 60%;
     padding: 0em 0.5em;
+    color: var(--purple-one);
 }
 
 #createBtn {
-    width: 40%;
+    margin-left: 0.25em;
+    width: 38%;
     color: var(--white);
     background: var(--purple-four);
 }
@@ -115,6 +118,54 @@ body {
     grid-row: 3 / 4;
 
     border-radius: var(--radius);
-    height: 80%;
-    background: #000;
+    height: 100%;
+    background: var(--purple-two);
+
+    position: relative;
+}
+
+.view-controls {
+    background: var(--purple-four);
+    border-radius: var(--radius);
+    height: 3em;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.view-controls a {
+    color: var(--purple-three);
+}
+
+#clear-all {
+    margin-left: 1em;
+}
+
+/* info */
+.info {
+    display: flex;
+    align-items: center;
+
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+
+    font-size: 0.8em;
+}
+
+#line {
+    width: 1px;
+    height: 36px;
+    background: var(--white);
+    margin: 0em 1em;
+}
+
+h1#right {
+    font-weight: 200;
+}
+
+#num-completed {
+    font-weight: 400;
 }
