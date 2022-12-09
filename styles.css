@@ -122,6 +122,9 @@ body {
     background: var(--purple-two);
 
     position: relative;
+    padding-top: 2em;
+    padding-left: 2em;
+
 }
 
 .view-controls {
@@ -130,6 +133,7 @@ body {
     height: 3em;
     width: 100%;
     position: absolute;
+    left: 0px;
     bottom: 0px;
     display: flex;
     align-items: center;
